@@ -1,0 +1,23 @@
+.createBtn {
+  @apply tw-p-4 tw-rounded-[10px];
+  height: 50px;
+  width: 187px;
+  background: linear-gradient(
+    90deg,
+    theme("colors.purple-envited") 3.25%,
+    theme("colors.pink-envited") 100%
+  );
+
+  @screen tablet {
+    width: 320px;
+  }
+
+  img {
+    width: 145px;
+    margin: auto;
+
+    @screen tablet {
+      width: 181px;
+    }
+  }
+}

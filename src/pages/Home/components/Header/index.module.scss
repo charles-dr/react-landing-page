@@ -1,8 +1,38 @@
 .wrapper {
-  @apply tw-text-center tw-text-6xl;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 36px;
+  @apply tw-text-center;
+
+  @screen laptop {
+    @apply tw-text-right;
+  }
+
+  .title {
+    @apply tw-text-center tw-text-6xl;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+
+    @screen tablet {
+      font-size: 64px;
+      line-height: 64px;
+    }
+
+    @screen laptop {
+      @apply tw-text-right;
+    }
+  }
+
+  .description {
+    @apply tw-mt-4 tw-font-light tw-font-body;
+    line-height: 18.4px;
+    font-size: 1rem;
+    max-width: 321px;
+
+    @screen tablet {
+      font-size: 1.5rem;
+      line-height: 27.6px;
+      max-width: 521px;
+    }
+  }
 }
 
 .gradientText {
@@ -16,4 +46,8 @@
   color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @screen tablet {
+    line-height: 73.59px;
+  }
 }

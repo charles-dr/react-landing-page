@@ -8,15 +8,17 @@ type Props = {
 
 export const Header: React.FC<Props> = ({ className }) => {
   return (
-    <div className={className}>
-      <div className={styles.wrapper}>
+    <div className={classNames(className, styles.wrapper)}>
+      <div className={styles.title}>
         <p className="tw-text-purple-dark">Imagine if</p>
         <p className={styles.gradientText}>Snapchat</p>
         <p className="tw-text-purple-dark">had events.</p>
       </div>
-      <p className="tw-mt-4 tw-text-center tw-font-light tw-font-body tw-text-base tw-leading-[18.4px] tw-mx-auto tw-max-w-[321px]">
-        Easily host and share events with your friends across any social media.
-      </p>
+      <div className="tw-flex tw-justify-center laptop:tw-justify-end">
+        <p className={styles.description}>
+          Easily host and share events with your friends across any social media.
+        </p>
+      </div>
     </div>
   )
 }

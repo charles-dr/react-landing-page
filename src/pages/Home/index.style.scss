@@ -1,11 +1,12 @@
 .container {
-  padding-top: 94px;
+  @apply tw-py-[94px];
 
   @screen tablet {
-    padding-top: 60px;
+    @apply tw-py-[60px];
   }
 
   @screen laptop {
-    padding-top: 100px;
+    @apply tw-py-[100px];
+    @apply tw-px-[160px];
   }
 }
