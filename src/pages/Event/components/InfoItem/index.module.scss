@@ -1,0 +1,18 @@
+.icon {
+  padding: 12px;
+  display: flex;
+  flex-grow: 0;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  background: white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  order: 0;
+
+  @screen tablet {
+    width: 56px;
+    height: 56px;
+    padding: 12px;
+  }
+}

@@ -1,0 +1,22 @@
+.title {
+  @apply tw-text-purple-dark tw-font-body tw-font-bold;
+  line-height: 32px;
+  font-size: 28px;
+
+  @screen tablet {
+    font-size: 48px;
+    line-height: 55px;
+  }
+}
+
+.host {
+  @apply tw-text-gray-2;
+  font-size: 14px;
+  font-weight: 400;
+  line-hgith: 16px;
+
+  @screen tablet {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
