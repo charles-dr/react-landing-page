@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Container from 'components/Container';
 import HCenter from 'components/HCenter';
 import Header from './components/Header';
@@ -7,6 +8,10 @@ import CreateEventButton from './components/CreateEventButton';
 import './index.style.scss';
 
 const HomePage: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleOnCreateEvent = () => navigate('/event');
+
   return (
     <Container className="tw-bg-purple-3 container">
       <div className="tw-flex tw-flex-row tw-justify-center laptop:tw-justify-between laptop:tw-items-center">
@@ -19,7 +24,7 @@ const HomePage: React.FC = () => {
             <EventCard className="tablet:tw-w-[311px] laptop:tw-w-[440px]" />
           </HCenter>
           <HCenter className="laptop:tw-text-right laptop:tw-mt-[52px]">
-            <CreateEventButton />
+            <CreateEventButton onClick={handleOnCreateEvent} />
           </HCenter>
         </div>
       </div>
