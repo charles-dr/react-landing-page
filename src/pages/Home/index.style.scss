@@ -1,0 +1,11 @@
+.container {
+  padding-top: 94px;
+
+  @screen tablet {
+    padding-top: 60px;
+  }
+
+  @screen laptop {
+    padding-top: 100px;
+  }
+}

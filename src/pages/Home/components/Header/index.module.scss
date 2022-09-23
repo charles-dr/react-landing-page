@@ -1,0 +1,19 @@
+.wrapper {
+  @apply tw-text-center tw-text-6xl;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.gradientText {
+  line-height: 41px;
+  background: linear-gradient(
+    90deg,
+    theme("colors.purple-envited") 24.2%,
+    theme("colors.pink-envited") 120.46%
+  );
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

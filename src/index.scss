@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply tw-font-body;
+}
+
+$gradient-1: linear-gradient(
+  90deg,
+  theme("colors.purple-envited") 24.2%,
+  theme("colors.pink-envited") 120.46%
+);
