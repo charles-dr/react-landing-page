@@ -1,25 +1,36 @@
 import React from 'react';
+import classNames from 'classnames';
 import arrowImage from './arrow.png';
 import styles from './index.module.scss';
 
 type Props = {
-  icon?: string;
-  children?: JSX.Element | JSX.Element[];
+  icon: string;
+  primary: JSX.Element | string;
+  secondary: JSX.Element;
+  className?: string;
 }
 
-export const InfoItem: React.FC<Props> = ({ icon, children }) => {
+export const InfoItem: React.FC<Props> = ({ className, icon, primary, secondary }) => {
   return (
-    <div className="tw-w-full tw-flex tw-justify-between tw-items-center">
-      <div className={styles.icon}>
-        <img
-          className="tw-w-full"
-          src={icon}
-        />
+    <div className={classNames(className, "tw-w-full tw-flex tw-justify-between tw-items-center")}>
+      <div className="tw-flex tw-justify-start tw-gap-[20px] tw-items-center">
+        <div className={styles.icon}>
+          <img
+            className="tw-w-full"
+            src={icon}
+            alt="Info Item"
+          />
+        </div>
+        <div>
+          <div className={styles.primary}>{primary}</div>
+          <div>{secondary}</div>
+        </div>
       </div>
-      {children}
       <img
         className="tw-w-[7px] tw-h-[14px]"
-        src={arrowImage} />
+        src={arrowImage}
+        alt="Details"
+      />
     </div>
   )
 }

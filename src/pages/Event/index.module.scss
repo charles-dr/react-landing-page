@@ -14,9 +14,15 @@
   font-size: 14px;
   font-weight: 400;
   line-hgith: 16px;
+  margin-bottom: 32px;
 
   @screen tablet {
     font-size: 18px;
     line-height: 21px;
+    margin-bottom: 55px;
+  }
+
+  @screen laptop {
+    margin-bottom: 65px;
   }
 }
